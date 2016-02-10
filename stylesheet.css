@@ -18,17 +18,15 @@
 	 text-decoration: underline;
 }
 
-@media (min-width: 320px) {
-  #hex { font-family: Helvetica; color: white; font-size: 4em; 
+@media all and (min-width: 320px) {
+  #hex { font-family: Helvetica; color: white; font-size: 4em;
   }
-@media (min-width: 500px) {
+@media all and (min-width: 500px) {
   #hex { font-family: Helvetica; color: white; font-size: 6em; }
 }
-
-@media (min-width: 750px) {
+@media all and (min-width: 750px) {
   #hex { font-family: Helvetica; color: white; font-size: 8em; }
 }
-
-@media (min-width: 1000px) {
+@media all and (min-width: 1000px) {
   #hex { font-family: Helvetica; color: white; font-size: 10em; }
 }
