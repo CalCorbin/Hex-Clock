@@ -1,16 +1,21 @@
-// displays time in military time that also acts as a hexidecimal code
+// Displays time in military time that also acts as a hexidecimal code
 function displayTime() {
-    d = new Date();
-    h = d.getHours();
-    m = d.getMinutes();
-    s = d.getSeconds();
-    //adds zero to left of numbers
-    if (h <= 9) h = '0' + h;
-    if (m <= 9) m = '0' + m;
-    if (s <= 9) s = '0' + s;
-    color = "#" + h + m + s;
+    const date = new Date();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+
+    // Adds zero to left of numbers
+    if (hours <= 9) hours = '0' + hours;
+    if (minutes <= 9) minutes = '0' + minutes;
+    if (seconds <= 9) seconds = '0' + seconds;
+    
+    const color = "#" + hours + minutes + seconds;
+    
     document.body.style.background = color;
     document.getElementById("hex").innerHTML = color;
+    
     setTimeout(displayTime, 1000);
 }
+
 displayTime();
